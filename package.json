@@ -1,0 +1,23 @@
+{
+  "name": "node-test-runner-cannot-mock-function-min-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -r @swc-node/register --test"
+  },
+  "author": "Gabriel Théron <gabriel.theron@spendesk.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@swc-node/register": "^1.6.8",
+    "@swc/cli": "^0.1.63",
+    "@swc/core": "^1.3.96",
+    "@swc/helpers": "^0.5.3",
+    "@types/node": "20.8.2",
+    "tsc-alias": "1.8.8",
+    "typescript": "^5.2.2"
+  },
+  "volta": {
+    "node": "20.8.0"
+  }
+}

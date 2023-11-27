@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@alias-one": ["./src/module-1/some/deep/add"],
+      "@alias-two": ["./src/module-1/some/deep/multiply"]
+    }
+  }
+}
