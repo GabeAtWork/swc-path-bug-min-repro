@@ -39,3 +39,9 @@ main();
 
 It seems that the bug only occurs when the path ends with a file name (here, `./src/module-1/some/deep/add`).
 When there is an `index.ts` file, the aliasing works as intended (see `./src/module-1/some/deep/multiply`).
+
+BUT running `SWC_NODE_PROJECT=./tsconfig.json node -r @swc-node/register ./src/module-2.ts` you'll still get the alias bug:
+
+```
+Error: Cannot find module './module-1/some/deep/@alias-one'
+```
